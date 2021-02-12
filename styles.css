@@ -377,19 +377,30 @@ main{
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
-.recomendado{
+.recomendado,
+.basico,
+.definitivo{
     position: absolute;
     width: 120px;
     height: 31px;
     padding: 6px;
     left: calc(50% - 60px);
     top: -15px;
-    background-color: var(--bitcoin-orange);
     border-radius: 8px;
     color: var(--just-white);
     font-size: 1.2rem;
     font-weight: bold;
 }
+.recomendado{
+    background-color: var(--bitcoin-orange);
+}
+.basico{
+    background-color: var(--secondary-blue);
+}
+.definitivo{
+    background-color: var(--warm-black);
+}
+
 .plan-card--tittle{
     padding-top: 30px;
     font-size: 1.4rem;
@@ -408,7 +419,7 @@ main{
     position: absolute;
     font-size: 1.2rem;
     font-weight: 300;
-    left: calc(50% - 6px - 35px);
+    left: calc(50% - 6px - 40px);
     top: calc(50% - 6px - 80px);
 }
 .plan-card-saving{
@@ -427,6 +438,12 @@ main{
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+}
+.basbutton{
+    border: 2px solid var(--secondary-blue);
+}
+.defbutton{
+    border: 2px solid var(--warm-black);
 }
 .plan-card-ca span{
     display: inline-block;
